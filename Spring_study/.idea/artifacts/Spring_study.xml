@@ -1,0 +1,48 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Spring_study">
+    <output-path>$PROJECT_DIR$/out/artifacts/Spring_study</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring_study" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.9.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.4" />
+          <element id="library" level="project" name="Maven: io.lettuce:lettuce-core:6.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.79.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.79.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.79.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.79.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport-native-unix-common:4.1.79.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.79.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.79.Final" />
+          <element id="library" level="project" name="Maven: io.projectreactor:reactor-core:3.4.21" />
+          <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.4" />
+          <element id="library" level="project" name="Maven: io.reactivex:rxjava:1.3.8" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:19.0" />
+          <element id="library" level="project" name="Maven: biz.paluch.redis:lettuce:4.4.6.Final" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.22.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-redis:2.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-keyvalue:2.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.14.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-oxm:5.2.14.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:5.2.14.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
