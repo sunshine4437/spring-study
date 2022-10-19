@@ -5,12 +5,8 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash(value = "test", timeToLive = 30)
-@Getter
-@Setter
+@RedisHash(value = "testVo", timeToLive = 30)
 public class TestVo {
-    @Id
     private String id;
     private String name;
-    private String age;
 }

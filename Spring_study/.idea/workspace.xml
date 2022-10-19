@@ -10,19 +10,113 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ec2104c-8306-45f6-bed1-73adbf6c7ab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/spring/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test1/Test1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test1/src/main/java/com/spring/spring/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test1/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test1/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test1/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../res/src/main/java/com/spring/spring/controller/Testcontroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../res/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../res/web/WEB-INF/config/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../res/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../res/web/WEB-INF/redis-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../res/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Spring_study.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Spring_study.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/classes/com/spring/spring/Aspectj/Aop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/classes/com/spring/spring/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/classes/com/spring/spring/config/RootConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/classes/com/spring/spring/config/ServletConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/classes/com/spring/spring/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/classes/com/spring/spring/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/classes/redis.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/aspectjweaver-1.9.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/guava-19.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/jackson-annotations-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/jackson-core-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/jackson-databind-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/javax.servlet-api-4.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/lettuce-4.4.6.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/lettuce-core-6.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/netty-buffer-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/netty-codec-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/netty-common-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/netty-handler-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/netty-resolver-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/netty-transport-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/netty-transport-native-unix-common-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/reactive-streams-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/reactor-core-3.4.21.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/rxjava-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/slf4j-api-1.7.26.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-aop-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-beans-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-context-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-context-support-5.2.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-core-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-data-commons-2.3.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-data-keyvalue-2.3.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-data-redis-2.3.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-expression-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-jcl-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-oxm-5.2.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-tx-5.2.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-web-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_study/WEB-INF/lib/spring-webmvc-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/spring/Aspectj/Aop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/spring/Aspectj/Aop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/spring/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/spring/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/spring/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/spring/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/spring/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/spring/config/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/spring/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/spring/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test" beforeDir="false" afterPath="$PROJECT_DIR$/../Test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/.idea/artifacts/res.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../res/.idea/artifacts/res_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/classes/com/spring/spring/controller/Testcontroller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/classes/com/spring/spring/vo/TestVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/config/redis.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/guava-19.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/jackson-annotations-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/jackson-core-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/jackson-databind-2.13.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/lettuce-4.5.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/lettuce-core-6.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/lombok-1.18.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-buffer-4.1.29.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-buffer-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-codec-4.1.29.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-codec-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-common-4.1.29.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-common-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-handler-4.1.29.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-handler-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-resolver-4.1.29.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-resolver-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-transport-4.1.29.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-transport-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/netty-transport-native-unix-common-4.1.79.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/reactive-streams-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/reactor-core-3.4.21.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/rxjava-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/slf4j-api-1.7.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-aop-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-aop-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-beans-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-beans-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-context-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-context-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-context-support-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-core-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-core-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-data-commons-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-data-keyvalue-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-data-redis-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-expression-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-expression-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-jcl-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-jcl-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-oxm-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-tx-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-web-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-web-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-webmvc-5.2.22.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/lib/spring-webmvc-5.3.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/redis-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/out/artifacts/res/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../res/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../res/src/main/java/com/spring/spring/vo/TestVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../res/src/main/java/com/spring/spring/vo/TestVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +159,19 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/spring-study/Spring_study",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15478972",
-    "project.structure.side.proportion": "0.1049672",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "3462a2d26851895fe561f9cb84a3e8f4"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/spring-study/Spring_study&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15478972&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.50609183&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3462a2d26851895fe561f9cb84a3e8f4&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.spring.spring.config" />
@@ -85,11 +179,45 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\spring-study\AOP\web\WEB-INF\views" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Test.test">
+    <configuration name="Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/spring_study/test" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/Spring_study/test" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Spring_study">
@@ -178,6 +306,17 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.Test" />
+      <item itemvalue="JUnit.Test.test" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test.test" />
+        <item itemvalue="JUnit.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -198,6 +337,11 @@
       <workItem from="1665988325408" duration="1068000" />
       <workItem from="1665992458824" duration="4717000" />
       <workItem from="1666066662850" duration="2240000" />
+      <workItem from="1666070178255" duration="4595000" />
+      <workItem from="1666076068190" duration="5349000" />
+      <workItem from="1666141705449" duration="7875000" />
+      <workItem from="1666162083721" duration="428000" />
+      <workItem from="1666166172034" duration="1500000" />
     </task>
     <servers />
   </component>

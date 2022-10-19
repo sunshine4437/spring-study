@@ -22,8 +22,10 @@ public class Aop {
     @Around("testAOP()")
     public Object aroudAOP(ProceedingJoinPoint joinPoint) throws Throwable {
         Object result = null;
+
         try {
             result = joinPoint.proceed();
+
             System.out.println("around : " + joinPoint.getSignature());
             Arrays.asList(joinPoint.getArgs()).forEach(e -> {
                 if (e instanceof HttpServletRequest) {

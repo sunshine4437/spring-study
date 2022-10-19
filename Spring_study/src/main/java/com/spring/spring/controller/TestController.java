@@ -1,6 +1,9 @@
 package com.spring.spring.controller;
 
+import com.spring.spring.service.TestService;
+import com.spring.spring.vo.TestVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
@@ -16,22 +19,22 @@ import java.util.stream.Collectors;
 
 @Controller
 public class TestController {
+    private TestService testService;
 
     @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
-
+    public TestController(@Qualifier("testService") TestService testService) {
+        this.testService = testService;
+    }
 
     @GetMapping(value = "test")
     @ResponseBody
-    public String getTest(HttpServletRequest request) {
-        ValueOperations<String, Object> valueOps = redisTemplate.opsForValue();
-        valueOps.set("test", "test");
-        return (String) valueOps.get("test");
+    public String get(@RequestBody String key) {
+        return testService.getVo(key).getName();
     }
 
     @PostMapping(value = "test")
     @ResponseBody
-    public String postTest(@RequestBody Map<String, Object> data) {
-        return "index";
+    public void set(@RequestBody TestVo vo) {
+        testService.setVo(vo);
     }
 }
