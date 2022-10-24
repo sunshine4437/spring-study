@@ -28,8 +28,27 @@ public class TestController {
 
     @GetMapping(value = "test")
     @ResponseBody
-    public String get(@RequestBody String key) {
-        return testService.getVo(key).getName();
+    public String get(HttpServletRequest request) {
+        //        return testService.getVo(key).getName();
+        String ip = request.getHeader("X-Forwarded-For");
+        if (ip == null) {
+            ip = request.getHeader("Proxy-Client-IP");
+        }
+        if (ip == null) {
+            ip = request.getHeader("WL-Proxy-Client-IP"); // 웹로직
+        }
+        if (ip == null) {
+            ip = request.getHeader("HTTP_CLIENT_IP");
+        }
+        if (ip == null) {
+            ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+        }
+        if (ip == null) {
+            ip = request.getRemoteAddr();
+        }
+        System.out.println(ip);
+
+        return "asdf";
     }
 
     @PostMapping(value = "test")

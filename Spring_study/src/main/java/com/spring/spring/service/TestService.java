@@ -37,7 +37,7 @@ public class TestService {
     public TestVo getVo(String key) {
         HashOperations<String, String, TestVo> hashOps = redisTemplate.opsForHash();
         ListOperations<String, Object> listOps = redisTemplate.opsForList();
-        System.out.println(listOps.leftPop("key"));
+        Objects.requireNonNull(listOps.range("key", 0, -1)).forEach(System.out::println);
         return hashOps.get("vo", key);
     }
 }
