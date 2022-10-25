@@ -5,19 +5,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping(value = "/")
+//@RequestMapping(value = "/")
 public class TestController {
 
     @Autowired
     private TestService testService;
 
-    @GetMapping(value = "/")
-    public String index(Model model) {
-        testService.getList().forEach(e -> System.out.println(e.getId() + " " + e.getName() + " " + e.getResultCode()));
+    @GetMapping(value = "/index")
+    public String index(HttpServletRequest request, HttpServletResponse response, Model model) {
+        String str = (String) request.getSession().getAttribute("test");
+        if (str == null) {
+            request.getSession().setAttribute("test", "test");
+        } else {
+            System.out.println(str);
+        }
+
         model.addAttribute("data", "test");
         return "index";
     }
+
+    @GetMapping(value = "/sign-up")
+    public String signUp() {
+        return "auth/sign-up";
+    }
+
+    @GetMapping(value = "/sign-in")
+    public String signIn() {
+        return "auth/sign-in";
+    }
+
 }
