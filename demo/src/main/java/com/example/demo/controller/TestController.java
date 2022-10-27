@@ -25,6 +25,11 @@ public class TestController {
         return "index";
     }
 
+    @GetMapping(value = "/error-test")
+    public String error() {
+        throw new RuntimeException();
+    }
+
     @GetMapping(value = "/sign-up")
     public String signUp() {
         return "auth/sign-up";

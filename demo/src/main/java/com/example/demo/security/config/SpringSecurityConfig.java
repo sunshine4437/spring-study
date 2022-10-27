@@ -1,6 +1,8 @@
-package com.example.demo.security;
+package com.example.demo.security.config;
 
 import com.example.demo.security.CustomAuthenticationProvider;
+import com.example.demo.security.CustomFailureHandler;
+import com.example.demo.security.CustomSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -52,10 +54,11 @@ public class SpringSecurityConfig {
         httpSecurity
                 .csrf().disable()
                 .authorizeHttpRequests()
-                .antMatchers("/sign-in", "/sign-up").permitAll()
+//                .antMatchers("/sign-in", "/sign-up").permitAll()
                 .antMatchers("/", "/index", "/test").hasRole("ADMIN")
+                .anyRequest().permitAll();
 //                .antMatchers().authenticated()
-                .and()
+        httpSecurity
                 .formLogin()
                 .usernameParameter("id")
                 .passwordParameter("pwd")
@@ -64,16 +67,16 @@ public class SpringSecurityConfig {
 //                .defaultSuccessUrl("/index", true)
 //                .failureUrl("/sign-in")
                 .successHandler(new CustomSuccessHandler())
-                .failureHandler(new CustomFailureHandler())
-                .and()
+                .failureHandler(new CustomFailureHandler());
+        httpSecurity
                 .logout()
                 .logoutUrl("/logout")
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESSIONID")
-                .logoutSuccessUrl("/sign-in")
-                .and()
-                .exceptionHandling().accessDeniedPage("/sign-in")
-        ;
+                .logoutSuccessUrl("/sign-in");
+        httpSecurity
+                .exceptionHandling().accessDeniedPage("/sign-in");
+
 //                .successHandler()
 
         return httpSecurity.build();
