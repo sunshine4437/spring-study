@@ -17,8 +17,8 @@
 
         <!-- 파일 -->
         <RollingFile name ="RollingFile">
-            <FileName>${LOGS_PATH}/${logFileName}.log</FileName>
-            <FilePattern>${LOGS_PATH}/${logFileName}.%d{yyyy-MM-dd}.%i.log.gz</FilePattern>
+            <FileName>log/${logFileName}.log</FileName>
+            <FilePattern>log/${logFileName}.%d{yyyy-MM-dd}.%i.log.gz</FilePattern>
             <PatternLayout>
                 <Pattern>${fileLayout}</Pattern>
             </PatternLayout>

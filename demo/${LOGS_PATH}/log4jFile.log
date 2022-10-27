@@ -1509,3 +1509,42 @@ java.lang.RuntimeException: null
 2022-10-27 17:49:00,957 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LogAspect(logging:33) - String com.example.demo.controller.TestController.signIn() : logging
 2022-10-27 17:49:20,730 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:350) - HikariPool-1 - Shutdown initiated...
 2022-10-27 17:49:20,769 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:352) - HikariPool-1 - Shutdown completed.
+2022-10-27 17:49:25,289 [main] INFO  com.example.demo.DemoApplication(logStarting:55) - Starting DemoApplication using Java 11 on RTNB119 with PID 15664 (D:\spring-study\demo\build\classes\java\main started by sunshine4437 in D:\spring-study\demo)
+2022-10-27 17:49:25,295 [main] INFO  com.example.demo.DemoApplication(logStartupProfileInfo:634) - No active profile set, falling back to 1 default profile: "default"
+2022-10-27 17:49:25,995 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-27 17:49:26,007 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2022-10-27 17:49:26,537 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-10-27 17:49:26,543 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-27 17:49:26,544 [main] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2022-10-27 17:49:26,544 [main] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 17:49:26,641 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2022-10-27 17:49:26,641 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:292) - Root WebApplicationContext: initialization completed in 1309 ms
+2022-10-27 17:49:27,060 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain(<init>:55) - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@402b4f81, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ef7fa1, org.springframework.security.web.context.SecurityContextPersistenceFilter@25c1f5ee, org.springframework.security.web.header.HeaderWriterFilter@2a04ab05, org.springframework.security.web.authentication.logout.LogoutFilter@54895681, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@589fb74d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bf018dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@274fdea6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23b1aa9, org.springframework.security.web.session.SessionManagementFilter@a056b26, org.springframework.security.web.access.ExceptionTranslationFilter@7ae590f6, org.springframework.security.web.access.intercept.AuthorizationFilter@7f12094d]
+2022-10-27 17:49:27,067 [main] WARN  org.springframework.security.config.annotation.web.builders.WebSecurity(performBuild:305) - You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-10-27 17:49:27,067 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain(<init>:52) - Will not secure Ant [pattern='/static/**']
+2022-10-27 17:49:27,294 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:57) - Adding welcome page template: index
+2022-10-27 17:49:27,390 [main] WARN  org.thymeleaf.templatemode.TemplateMode(parse:150) - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2022-10-27 17:49:27,533 [main] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:110) - HikariPool-1 - Starting...
+2022-10-27 17:49:27,724 [main] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:123) - HikariPool-1 - Start completed.
+2022-10-27 17:49:27,866 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2022-10-27 17:49:27,883 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-27 17:49:27,894 [main] INFO  com.example.demo.DemoApplication(logStarted:61) - Started DemoApplication in 2.931 seconds (JVM running for 4.067)
+2022-10-27 17:49:30,169 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-27 17:49:30,169 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-10-27 17:49:30,170 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
+2022-10-27 17:49:30,213 [http-nio-8080-exec-1] DEBUG jdbc.sqltiming(sqlTimingOccurred:368) -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT *
+        FROM TEST_TABLE
+        WHERE id = 'asdf'
+ {executed in 7 msec}
+2022-10-27 17:49:30,219 [http-nio-8080-exec-1] INFO  jdbc.resultsettable(resultSetCollected:610) - 
+|---|-----|---------|-----|-------|
+|id |name |password |auth |enable |
+|---|-----|---------|-----|-------|
+|---|-----|---------|-----|-------|
+
+2022-10-27 17:49:30,400 [http-nio-8080-exec-1] WARN  org.apache.catalina.util.SessionIdGeneratorBase(log:173) - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [175] milliseconds.
+2022-10-27 17:49:30,446 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LogAspect(afterReturning:22) - String com.example.demo.controller.TestController.signIn() : afterReturning
+2022-10-27 17:49:30,447 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LogAspect(logging:33) - String com.example.demo.controller.TestController.signIn() : logging
+2022-10-27 17:50:09,229 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LogAspect(afterReturning:22) - String com.example.demo.controller.TestController.signIn() : afterReturning
+2022-10-27 17:50:09,229 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LogAspect(logging:33) - String com.example.demo.controller.TestController.signIn() : logging
