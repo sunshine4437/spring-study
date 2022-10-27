@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko"
       xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 >
 <!--      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"-->
 
@@ -9,6 +10,9 @@
     <title>index</title>
 </head>
 <body>
-index page
+<div>
+    <h1>Index page</h1>
+    <span>welcome : </span><span th:text="${#request.getSession().getAttribute('msg')}"></span>
+</div>
 </body>
 </html>

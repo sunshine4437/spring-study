@@ -29,22 +29,22 @@ public class SpringSecurityConfig {
     }
 
     //    basic
-//    @Bean
-//    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
-//            throws Exception {
-//        return authenticationConfiguration.getAuthenticationManager();
-//    }
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
+            throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
 
     //     custom
-    @Autowired
-    private CustomAuthenticationProvider authProvider;
-
-    @Bean
-    public AuthenticationManager authenticationManager(HttpSecurity httpSecurity) throws Exception {
-        AuthenticationManagerBuilder authenticationManagerBuilder = httpSecurity.getSharedObject(AuthenticationManagerBuilder.class);
-        authenticationManagerBuilder.authenticationProvider(authProvider);
-        return authenticationManagerBuilder.build();
-    }
+//    @Autowired
+//    private CustomAuthenticationProvider authProvider;
+//
+//    @Bean
+//    public AuthenticationManager authenticationManager(HttpSecurity httpSecurity) throws Exception {
+//        AuthenticationManagerBuilder authenticationManagerBuilder = httpSecurity.getSharedObject(AuthenticationManagerBuilder.class);
+//        authenticationManagerBuilder.authenticationProvider(authProvider);
+//        return authenticationManagerBuilder.build();
+//    }
 
 
     @Bean
@@ -53,7 +53,7 @@ public class SpringSecurityConfig {
                 .csrf().disable()
                 .authorizeHttpRequests()
                 .antMatchers("/sign-in", "/sign-up").permitAll()
-                .antMatchers("/", "/index").hasRole("ADMIN")
+                .antMatchers("/", "/index", "/test").hasRole("ADMIN")
 //                .antMatchers().authenticated()
                 .and()
                 .formLogin()
@@ -61,8 +61,16 @@ public class SpringSecurityConfig {
                 .passwordParameter("pwd")
                 .loginPage("/sign-in")
                 .loginProcessingUrl("/auth/sign-in")
-                .defaultSuccessUrl("/index")
-                .failureUrl("/sign-in")
+//                .defaultSuccessUrl("/index", true)
+//                .failureUrl("/sign-in")
+                .successHandler(new CustomSuccessHandler())
+                .failureHandler(new CustomFailureHandler())
+                .and()
+                .logout()
+                .logoutUrl("/logout")
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID")
+                .logoutSuccessUrl("/sign-in")
                 .and()
                 .exceptionHandling().accessDeniedPage("/sign-in")
         ;
