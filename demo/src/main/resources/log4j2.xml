@@ -33,7 +33,7 @@
     <!--Log가 찍힐 대상 설정.-->
     <Loggers>
         <logger name="jdbc" level="OFF"/>
-        
+
         <logger name="jdbc.sqlonly" level="OFF"/>
         <logger name="jdbc.sqltiming" level="DEBUG"/>
         <logger name="jdbc.audit" level="WARN"/>
@@ -54,9 +54,9 @@
         </logger>
 
         <!-- ROOT logger-->
-        <Root level="info">
-            <AppenderRef ref="console"/>
-            <AppenderRef ref="RollingFile"/>
+        <Root>
+            <AppenderRef ref="console"  level="INFO"/>
+            <AppenderRef ref="RollingFile"  level="WARN"/>
         </Root>
     </Loggers>
 </Configuration>
